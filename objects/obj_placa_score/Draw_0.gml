@@ -16,8 +16,12 @@ draw_set_valign(1);
 draw_set_font(fnt_play);
 draw_set_colour(c_black);
 
+//Indo do zero até o número certo
+max_score = lerp(max_score, global.max_score, 0.1);
+
 //Desenhando
-draw_text(meu_x, meu_y,"Recorde: " + string(round(global.max_score)));
+draw_text(meu_x, meu_y,"Recorde: " + string(round(max_score)));
+//draw_text(meu_x, meu_y,"Recorde: " + string(round(global.max_score)));
 
 
 //Resetando

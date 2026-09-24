@@ -3,3 +3,4 @@ meu_x = x;
 meu_y = y;
 
 max_score = 0;
+
